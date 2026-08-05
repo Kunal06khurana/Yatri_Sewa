@@ -97,10 +97,10 @@
                             Emergency Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="emergencyDropdown">
-                            {% comment %} <li><a class="dropdown-item" href="http://127.0.0.1:8000/accounts/sos/">SOS</a></li> {% endcomment %}
+                            {% comment %} <li><a class="dropdown-item" href="/accounts/sos/">SOS</a></li> {% endcomment %}
                             <li><a class="dropdown-item" href="{% url 'emergency_announcements' %}">Emergency Announcements</a></li>
-                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/accounts/lost-found/">Lost & Found</a></li>
-                            <li><a class="dropdown-item" href="http://127.0.0.1:8000/accounts/contacts/">Emergency Contacts</a></li>
+                            <li><a class="dropdown-item" href="/accounts/lost-found/">Lost & Found</a></li>
+                            <li><a class="dropdown-item" href="/accounts/contacts/">Emergency Contacts</a></li>
                         </ul>
                     </li>
                     {% if user.is_authenticated %}

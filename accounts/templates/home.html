@@ -367,10 +367,10 @@
                 <a class="subsubheader2" href="http://localhost:8000/accounts/tours/">Tours</a>
                 <a class="subsubheader2" href="http://localhost:8000/accounts/reviews/">reviews</a>
                 <ul class="dropdown-menu" aria-labelledby="emergencyDropdown">
-                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/accounts/sos/">SOS</a></li>
+                    <li><a class="dropdown-item" href="/accounts/sos/">SOS</a></li>
                     <li><a class="dropdown-item" href="{% url 'emergency_announcements' %}">Emergency Announcements</a></li>
-                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/accounts/lost-found/">Lost & Found</a></li>
-                    <li><a class="dropdown-item" href="http://127.0.0.1:8000/accounts/contacts/">Emergency Contacts</a></li>
+                    <li><a class="dropdown-item" href="/accounts/lost-found/">Lost & Found</a></li>
+                    <li><a class="dropdown-item" href="/accounts/contacts/">Emergency Contacts</a></li>
                 </ul>
                 {% if user.is_authenticated %}
                     <a href="{% url 'profile' %}">
