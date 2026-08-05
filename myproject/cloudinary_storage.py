@@ -18,13 +18,14 @@ class CloudinaryMediaStorage(Storage):
     """
 
     def _save(self, name, content):
+        # Normalize path separators — Cloudinary requires forward slashes
+        name = name.replace("\\", "/")
         # Strip the extension so Cloudinary uses it as the public_id base
         public_id = os.path.splitext(name)[0]
         # Upload to Cloudinary
         response = cloudinary.uploader.upload(
             content,
             public_id=public_id,
-            overwrite=True,
             resource_type="auto",
         )
         # Store the full path including extension so url() can reconstruct it
