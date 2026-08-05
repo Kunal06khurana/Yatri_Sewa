@@ -1,0 +1,15 @@
+# Environment variables
+.env
+.env.example
+
+#
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+
+# Uploaded media (optional, but good practice so you don't commit test images)
+media/
